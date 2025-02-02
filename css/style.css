@@ -1,0 +1,80 @@
+/* styles.css */
+
+/* Color Palette */
+:root {
+    --primary-color: #4070F5;
+    --secondary-color: #813EF0;
+    --accent-color: #41ADFA;
+    --background-color: #F4F4F4;
+    --text-color: #264653;
+}
+
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+/* Header */
+header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 48px;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: var(--secondary-color);
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: var(--accent-color);
+    text-decoration: underline;
+}
+
+/* Content Section */
+section {
+    padding: 40px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 36px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
