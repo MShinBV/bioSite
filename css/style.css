@@ -7,6 +7,7 @@
     --accent-color: #41ADFA;
     --background-color: #F4F4F4;
     --text-color: #264653;
+    --H1-text-color: #F4F4F4;
 }
 
 /* General Styles */
@@ -18,7 +19,13 @@ body {
     padding: 0;
 }
 
-h1, h2, h3 {
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    color: var(--H1-text-color);
+}
+
+h2, h3 {
     font-family: 'Playfair Display', serif;
     font-weight: 600;
     color: var(--text-color);
