@@ -1,2 +1,5 @@
-# bioSite
-csd340 bioSite Project
+# CSD 340 Web Development with HTML and CSS  
+
+## Contributors  
+- Instructor: Nathan Braun 
+- Student: Miles Shinsato
