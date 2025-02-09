@@ -1,4 +1,4 @@
-/* Miles Shinsato, 02/02/2025, 6.3 Assignment */
+/* Miles Shinsato, 02/09/2025, 7.2 Assignment */
 
 /* styles.css */
 
@@ -41,8 +41,13 @@ header {
     text-align: center;
 }
 
+
+/* Adjustment for 7.2 found here*/
 header h1 {
-    font-size: 48px;
+
+    /* Changes for Responsive Text Sizing*/
+    font-size: 4rem;
+
 }
 
 /* Navigation */
@@ -71,13 +76,28 @@ section {
     text-align: center;
 }
 
+
+/* Adjustment for 7.2 found here*/
 h2 {
-    font-size: 36px;
+
+    /* Adjustment for sizing */
+    font-size: 2.5rem;
+
+    /* Adjustment for placement */
+    margin-left: 20%;
+    text-align: left;
 }
 
+/* Adjustment for 7.2 found here*/
 p {
-    font-size: 16px;
+
+    /* Adjustment for sizing */
+    font-size: 1rem;
     line-height: 1.8;
+}
+
+p.paragraph {
+    text-indent: 40px;
 }
 
 /* Footer */
@@ -86,4 +106,43 @@ footer {
     color: white;
     text-align: center;
     padding: 10px;
+}
+
+/* Adjustment for 7.2 found here*/
+/* Responsive design elements added */
+@media (max-width: 1024px) {
+    header h1 {
+        font-size: 3rem;
+        margin-left: 10%;
+    }
+
+    h2 {
+        font-size: 2rem;
+        margin-left: 10%;
+    }
+}
+
+@media (max-width: 768px) {
+    header h1, h2 {
+        margin-left: 5%;
+        text-align: center;
+    }
+
+    nav a {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 2rem;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        margin-left: 0;
+        text-align: center;
+    }
 }
