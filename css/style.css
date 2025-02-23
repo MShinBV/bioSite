@@ -1,4 +1,4 @@
-/* Miles Shinsato, 02/14/2025, 9.2 Assignment */
+/* Miles Shinsato, 02/23/2025, 10.2 Assignment */
 
 /* styles.css */
 
@@ -7,7 +7,7 @@
     --primary-color: #4070F5;
     --secondary-color: #41ADFA;
     --accent-color: #813EF0;
-    --background-color: #F4F4F4;
+    --background-color: #bbe6e4;
     --text-color: #264653;
     --H1-text-color: #F4F4F4;
 }
@@ -31,6 +31,7 @@ h2, h3 {
     font-family: 'Playfair Display', serif;
     font-weight: 600;
     color: var(--text-color);
+    margin-bottom: 0;
 }
 
 /* Header */
@@ -41,13 +42,11 @@ header {
     text-align: center;
 }
 
-
-/* Adjustment for 7.2 found here*/
+/* Header Responsive Text */
 header h1 {
-
-    /* Changes for Responsive Text Sizing*/
-    font-size: 4rem;
-
+    font-size: 3rem;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 /* Navigation */
@@ -61,8 +60,9 @@ nav {
 nav a {
     color: white;
     text-decoration: none;
-    margin: 0 20px;
-    font-weight: 500;
+    margin: 0 10px;
+    font-weight: 400;
+    font-size: 1.4rem;
 }
 
 nav a:hover {
@@ -76,28 +76,16 @@ section {
     text-align: center;
 }
 
-
-/* Adjustment for 7.2 found here*/
+/* Heading Style */
 h2 {
-
-    /* Adjustment for sizing */
     font-size: 2.5rem;
-
-    /* Adjustment for placement */
     margin-left: 20%;
     text-align: left;
 }
 
-/* Adjustment for 7.2 found here*/
 p {
-
-    /* Adjustment for sizing */
-    font-size: 1rem;
-    line-height: 1.8;
-}
-
-p.paragraph {
-    text-indent: 40px;
+    font-size: 0.8rem;
+    line-height: 1.5;
 }
 
 /* Footer */
@@ -108,7 +96,6 @@ footer {
     padding: 10px;
 }
 
-/* Adjustment for 7.2 found here*/
 /* Responsive design elements added */
 @media (max-width: 1024px) {
     header h1 {
@@ -131,18 +118,66 @@ footer {
     nav a {
         font-size: 1rem;
     }
+
+    .landing-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .portrait-box img {
+        display: flex;
+        align-items: flex-start;
+        width: 80%;
+    }
+
+    .about-content {
+        padding: 10px;
+    }
 }
 
-@media (max-width: 480px) {
-    header h1 {
-        font-size: 2rem;
-        margin-left: 0;
-        text-align: center;
-    }
+/* Additions for 10.2 here
+/* Layout for landing container: image and text side by side */
+.landing-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    padding: 10px;
+}
 
-    h2 {
-        font-size: 1.5rem;
-        margin-left: 0;
-        text-align: center;
-    }
+.landing-blurb {
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.landing-blurb p {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+
+.portrait-box img {
+    /* Adjust the size of the image */
+    width: 500px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Text Box Styling */
+.text-box {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 1.3rem;
+    line-height: 1.5;
+
 }

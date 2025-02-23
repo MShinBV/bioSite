@@ -1,4 +1,4 @@
-/* Miles Shinsato, 02/14/2025, 9.2 Assignment */
+/* Miles Shinsato, 02/23/2025, 10.2 Assignment */
 
 /* images-grid.css */
 
@@ -10,17 +10,6 @@
     padding: 10px;
     max-width: 900px;
     margin: auto;
-}
-
-/* Text Box Styling */
-.text-box {
-    background-color: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.1);
-    font-size: 16px;
-    line-height: 1.8;
-
 }
 
 /* Image Box Styling */
@@ -40,7 +29,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 30px;
-    padding: 40px;
+    padding: 10px;
     max-width: 1200px;
     margin: auto;
     align-items: center;
@@ -48,8 +37,9 @@
 
 /* Portrait Box Styling */
 .portrait-box {
+    padding: 10px;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 }
 
@@ -60,6 +50,7 @@
     max-width: 800px;
     border-radius: 8px;
     box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.1);
+    justify-content: flex-start;
     top: 0;
 }
 
